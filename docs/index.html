@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sol Weather — Legal</title>
+<meta name="description" content="Legal policies for Sol Weather, the Solana Seeker weather and dashboard app.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤</text></svg>">
+<style>
+  :root {
+    --sol-purple: #9945FF;
+    --sol-green: #14F195;
+    --bg: #0a0a0f;
+    --card-bg: #12121a;
+    --text: #d0d0d8;
+    --text-muted: #6b6b7b;
+    --border: #1e1e2e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .logo h1 {
+    font-size: 2em;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--sol-purple), var(--sol-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+  .logo p {
+    color: var(--text-muted);
+    font-size: 0.95em;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color 0.2s, transform 0.15s;
+  }
+  .card:hover {
+    border-color: var(--sol-purple);
+    transform: translateY(-2px);
+  }
+  .card h2 {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .card p {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .card .tag {
+    display: inline-block;
+    font-size: 0.72em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .tag-required { background: rgba(153,69,255,0.15); color: var(--sol-purple); }
+  .tag-compliance { background: rgba(20,241,149,0.15); color: var(--sol-green); }
+  .footer {
+    margin-top: 48px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.82em;
+    line-height: 1.8;
+  }
+  .footer a { color: var(--sol-green); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 480px) {
+    .container { padding: 32px 16px; }
+    .logo h1 { font-size: 1.6em; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <h1>Sol Weather</h1>
+    <p>Legal &amp; Compliance</p>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="privacy.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Privacy Policy</h2>
+      <p>How Sol Weather handles your data. Compliant with Australian Privacy Act, GDPR (EU/UK), CCPA (California), APPI (Japan), PIPA (Korea), and PDPA (Singapore).</p>
+    </a>
+
+    <a class="card" href="terms.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Terms of Service</h2>
+      <p>Usage terms, intellectual property, limitations of liability, and dispute resolution. Includes Australian Consumer Law protections.</p>
+    </a>
+
+    <a class="card" href="disclaimer.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Disclaimer &amp; Risk Disclosure</h2>
+      <p>Important disclosures about weather data accuracy, cryptocurrency price data, financial advice limitations, and risk acknowledgements.</p>
+    </a>
+
+    <a class="card" href="sanctions.html">
+      <span class="tag tag-compliance">Compliance</span>
+      <h2>Sanctions &amp; Restricted Regions</h2>
+      <p>Compliance with OFAC, EU, UK, and Australian sanctions. Lists restricted jurisdictions and explains geographic screening.</p>
+    </a>
+
+    <a class="card" href="copyright.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Copyright Notice</h2>
+      <p>Copyright ownership, trademark attributions, data source credits, permitted use, and DMCA/copyright infringement procedures.</p>
+    </a>
+
+    <a class="card" href="license.html">
+      <span class="tag tag-required">Required</span>
+      <h2>Licence</h2>
+      <p>Proprietary application licence terms, open source component attributions, and the full Apache Licence 2.0 text.</p>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>All policies effective 14 February 2025 &middot; Last updated 14 February 2025</p>
+    <p>Sol Weather is developed in Australia &middot; <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+    <p>Package: <code>com.solweather.app</code></p>
+  </div>
+</div>
+</body>
+</html>
